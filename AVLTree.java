@@ -109,7 +109,7 @@ public class AVLTree {
     private boolean isBalance(AVLNode root) {
         if (root == null)
             return true;
-        if (balanceFactor(root) == 0 || balanceFactor(root) == 1)
+        if (balanceFactor(root) == 0 || Math.abs(balanceFactor(root)) == 1)
             return true;
         return false;
     }
